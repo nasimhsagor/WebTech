@@ -1,8 +1,0 @@
-{"firstname":"Md","lastname":"Aziz","gender":"male","email":"azizt0127@gmail.com","username":"aba","password":"abc","rec_email":"azizt0127@gmail.com"}
-{"firstname":"tarek","lastname":"rahman","gender":"male","email":"r@gmail.com","username":"tarek","password":"1234","rec_email":"azizt0127@gmail.com"}
-{"firstname":"Md","lastname":"Aziz","gender":"male","email":"azizt0127@gmail.com","username":"aaaaa","password":"123","rec_email":"azizt0127@gmail.com"}
-{"firstname":"Md","lastname":"Aziz","gender":"male","email":"azizt0127@gmail.com","username":"aaaaa","password":"123","rec_email":"azizt0127@gmail.com"}
-{"firstname":"s","lastname":"d","gender":"male","email":"d@gmail.com","username":"ss","password":"ss1122","rec_email":"nasimhaidarsagor@gmail.com"}
-{"firstname":"s","lastname":"d","gender":"male","email":"d@gmail.com","username":"ss","password":"ss1122","rec_email":"nasimhaidarsagor@gmail.com"}
-{"firstname":"s","lastname":"d","gender":"male","email":"d@gmail.com","username":"ss","password":"ss1122","rec_email":"nasimhaidarsagor@gmail.com"}
-{"firstname":"s","lastname":"d","gender":"male","email":"d@gmail.com","username":"ss","password":"ss1122","rec_email":"nasimhaidarsagor@gmail.com"}
