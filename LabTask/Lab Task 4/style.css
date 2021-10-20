@@ -1,0 +1,64 @@
+.lnav{
+	float:left;
+}
+
+.rnav{
+	float: right;
+	padding-top: 24px;
+	margin-right: 5px;
+
+}
+
+.rnav a{
+	margin:5px ;
+}
+
+header{
+	clear: both;
+	height: 70px;
+	background-color:  #ffffff;
+	border-bottom: 2%;
+}
+
+img 
+	{
+	height: 50px;
+	padding-top: 10px;
+	padding-left: 10px;
+	}
+
+.ftr{
+	text-align: center;
+	background-color:  #ffffff;
+	
+	
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.head_block{
+	border-top:1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+}
+.foot_block{
+	border-top:0.5px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000 ;
+}
+
+.single{
+	padding:50px 300px 50px 200px;
+	border-top:0.5px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000
+}
+
+
+.single2{
+	
+	border-top:0.5px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000
+}
