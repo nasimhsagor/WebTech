@@ -1,75 +1,103 @@
-<?php  
- $message = '';  
- $error = '';  
- if(isset($_POST["submit"]))  
- {  
-      if(empty($_POST["fname"]))  
-      {  
-           $error = "<label class='text-danger'>Enter Name</label>";  
-      }
-      else if(empty($_POST["lname"]))  
-      {  
-           $error = "<label class='text-danger'>Enter Password</label>";  
-      } 
-       
-      else  
-      {  
-           if(file_exists('data.json'))  
-           {  
-                $current_data = file_get_contents('data.json');  
-                $array_data = json_decode($current_data, true);  
-                $extra = array(  
-                     'un'               =>     $_POST['un'],  
-                     'pass'          =>     $_POST["pass"],
-                );  
-                $array_data[] = $extra;  
-                $final_data = json_encode($array_data);  
-                if(file_put_contents('data.json', $final_data))  
-                {  
-                     $message = "<label class='text-success'>Submit Success fully</p>";  
-                }  
-           }  
-           else  
-           {  
-                $error = 'JSON File not exits';  
-           }  
-      }  
- }  
- ?>
-<!DOCTYPE html>  
- <html>  
-      <head>  
-           <title>LOGIN</title>  
-           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
 
-      </head>  
-      <body>  
-           <br />  
-           <div class="container" style="width:500px;">                
-                <form method="post">  
-                     <?php   
-                     if(isset($error))  
-                     {  
-                          echo $error;  
-                     }  
-                     ?>  
-                     <br /> 
-                     <fieldset>
-                     <legend><h4>LOGIN</h4></legend>
-                     <label>User Name</label>
-                     <input type="text" name = "un" class="form-control" /><br />
-                     <label>Password</label>
-                     <input type="password" name = "pass" class="form-control" /><br />
+<!DOCTYPE HTML>  
+<html>
+	<head>
+		<style>
+			.error {color: #FF0000;}
+		</style>
+	</head>
+	<body>  
+		
+		<?php
+			$usernameErr= $passwordErr="";
+			$username = $password = "";
+			$degree=array();
+			
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			
+			  $password = $_POST["password"];
+			// Validate password strength
+				$uppercase = preg_match('@[A-Z]@', $password);
+				$lowercase = preg_match('@[a-z]@', $password);
+				$number    = preg_match('@[0-9]@', $password);
+				$specialChars = preg_match('@[^\w]@', $password);
+				
+				if (empty($password)) {
+					$passwordErr = "Password is required";
+				} 
 
-                     <input type="submit" name="submit" value="Submit" class="btn btn-info" />                     
-                     <?php  
-                     if(isset($message))  
-                     {  
-                          echo $message;  
-                     }  
-                     ?>
-                    
-    		
-		</fieldset>
-        </body>
+				else if( !$specialChars || strlen($password) < 8) {
+					$passwordErr = 'Password should be at least 8 characters and one special character.';
+				}else{
+					$password = $_POST["password"];
+				}
+				
+				if (empty($_POST["username"])) {
+					$usernameErr = "User Name is required";
+				}
+				else if(strlen($_POST["username"]) < 2){
+					$usernameErr = "User Name must contain at least 2 characters";
+				}
+				else{
+					$username = $_POST["username"];
+				}
+				
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			}
+			
+			
+		?>
+		
+		
+		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+			
+			
+			<fieldset style="width:320px;height: 170px;">
+				
+				<legend><b>LOGIN</b></legend>
+				<div style="padding:5px;">
+				User Name: <input type="text" name="username" value="<?php echo $username;?>">
+				<span class="error"><?php echo $usernameErr;?></span>
+				</div>
+				
+				<div style="padding:5px;">
+				Password  :&nbsp;&nbsp; <input type="text" name="password" value="<?php echo $password;?>">
+				<span class="error"><?php echo $passwordErr;?></span>
+				</div>
+				
+				<hr>
+				
+				<input type="checkbox" name="remember" value="1">Remember Me
+				
+				<div style="padding:5px;">
+				<input type="submit" name="submit" value="Submit"> 
+				<a href="#">Forgot Password?</a>
+				
+				</div>
+			</fieldset>
+
+		</form>
+		
+		<?php
+			echo "<h2>Output:</h2>";
+			echo $username;
+			echo "<br>";
+			echo $password;
+			echo "<br>";
+			
+			
+		?>
+	</body>
 </html>

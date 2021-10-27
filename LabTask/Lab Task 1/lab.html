@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab Task 1</title>
+	 <meta name="author" content="MD Tanjimul Islam">
+	<style type="text/css">
+		body {
+			background-color: #EBEBEB;
+			font-family: Arial, Helvetica, sans-serif;
+			margin-left: 15px;
+		}
+
+		p{
+			margin: 5px 0px;
+		}
+
+		.red{
+			color: red;
+		}
+
+		.tbl1{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.tbl_text_label{
+			font-weight: bold;
+			font-size: 13px;
+		}
+
+		.tbl_text_sty{
+    		width: 150px;
+    		padding-left: 150px;
+    		text-align: right;
+		}
+
+		.input_box{
+			height: 13px;
+			width: 200px;
+		}
+
+		.select_box{
+			height: 17px;
+			width: 130px;
+		}
+
+		.txt_bold{
+			font-weight: bold;
+		}
+
+		.trc{
+			padding-bottom: 0.5px;
+		}
+		.sml{
+
+			font-size: 12px;
+			font-weight: normal;
+
+		}
+		.hdr{
+			font-size: 17px;
+			margin: 5px;
+		}
+
+
+
+	</style>
+<body>
+
+	<div>
+		<p class="sml"><span style="color: red;">*</span> - Denotes Required Information</p>
+		<p style="font-size: 13px;"><span style="font-weight: bold;">
+			> 1 Donation</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;> 2 Confirmation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;> Thank You!</p>
+	</div>
+	<div class="hdr"><h3 class="red hdr">Donor Information</h3></div>
+
+	<table>
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">First Name<span class="red">*</span></td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Last Name<span class="red">*</span></td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Company</td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Address 1<span class="red">*</span></td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Address 2</td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">City<span class="red">*</span></td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">State<span class="red">*</span></td>
+			<td>
+				<select class="select_box txt_bold">
+					<option>Select a State</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Zip Code<span class="red">*</span></td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Country<span class="red">*</span></td>
+			<td>
+				<select class="select_box txt_bold" style="width: 260px">
+					<option>Select a Country</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Phone</td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Fax</td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Email<span class="red">*</span></td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Donation Amount<span class="red">*</span></td>
+			<td>
+				<div class="sml">
+					<input type="radio" name="">None 
+					<input type="radio" name=""> $50 
+					<input type="radio" name=""> $75 
+					
+					<input type="radio" name=""> $100
+					<input type="radio" name=""> $250
+					<input type="radio" name=""> Other 
+				</div></td>
+		</tr>
+
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Recurring Donation
+				<br/>
+				<span class="sml">(Check if yes)</span>
+			</td>
+			<td>
+				<div class="sml"><input type="checkbox" name=""> I am interested in giving on a regular basic.<br>Monthly Credit card $ <input type="text" style="width: 30px;height: 10px" name=""> For <input type="text" style="width: 30px;height: 10px" name=""> Months</div>
+			</td>
+		</tr>
+		
+	</table>
+
+	<div class="hdr"><h3 class="red hdr">Honorarium and Memorial Donation Information</h3></div>
+
+	<table> 
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">I would like to make this donation</td>
+			<td>
+				<div class="sml">
+					<input type="radio" name=""> To Honor<br>
+					<input type="radio" name=""> In Memory of 
+				</div>
+			</td>
+		</tr>
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Name</td>
+			<td><input class="input_box" type="text" name=""></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Acknoledge Donation to</td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Address </td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">City</td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">State</td>
+			<td>
+				<select class="select_box txt_bold">
+					<option>Select a State</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Zip<span class="red">*</span></td>
+			<td><input class="input_box" type="text" name="fname"></td>
+		</tr>
+
+	</table>
+
+	<div class="hdr"><h3 class="red hdr">Additional Information</h3><p class="sml">Please enter your name, company or organization as you would like to appear in our publications:</p></div>
+
+	<table> 
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">Name</td>
+			<td><input class="input_box" type="text" name=""></td>
+		</tr>
+
+	</table>
+
+	<div class="sml">
+		<input type="checkbox" name=""> I would like my gift to remain anonymous.<br>
+		<input type="checkbox" name=""> My employer offers a matching goft program. I will mail the matching gift them.<br>
+		<input type="checkbox" name=""> Please save the cost of acknoledging this gift by not mailing a thank you letter.
+	</div>
+
+	<table> 
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">
+				Comments<br>
+				<span class="sml">(Please type any question or feedback here)</span>
+			</td>
+			<td><textarea rows="4" cols="35"></textarea></td>
+		</tr>
+
+		<tr class="trc">
+			<td class="tbl_text_label tbl_text_sty">How may we contact you?</td>
+			<td>
+				<div class="sml">
+					<input type="checkbox" name=""> E-mail<br>
+					<input type="checkbox" name=""> Post Mail<br>
+					<input type="checkbox" name=""> Telephone<br>
+					<input type="checkbox" name=""> Fax<br>
+				</div>
+			</td>
+		</tr>
+
+		<tr class="trc">
+			<td colspan="2" align="left" class="sml" >
+				<span style="text-align:left;color: #888888">
+				I Would like to receive newsletters and information about events by:
+				</span>
+			</td>
+		</tr>
+
+		<tr class="trc">
+
+			<td class="tbl_text_label tbl_text_sty"></td>
+			<td>
+				<div class="sml">
+					<input type="checkbox" name=""> E-mail<br>
+					<input type="checkbox" name=""> Post Mail<br>
+					
+				</div>
+			</td>
+		</tr>
+
+	</table>
+
+	<div class="sml">
+		<input type="checkbox" name=""> I would like to information about volunteering with the
+	</div>
+
+	<div style="padding-left: 130px"><button style="border-radius: 10px;">Reset</button><button style="border-radius: 10px;">Continue</button></div>
+		<br>
+	<div class="sml">
+		 <img src="https://tnrsoft.com/images/padlock-removebg-preview.png" height="12px" width="18px" alt="Padlock"> Donate Online With confidence. You are on a secure server.
+	</div>
+	<br>
+
+	<div class="sml">
+		If you have any problem or question, please contact <span style="color: #AAAAAA">support</span>
+	</div>
+		
+
+</body>
+</html>
