@@ -6,7 +6,7 @@
                            <span class="icon-bar"></span>
                            <span class="icon-bar"></span>
                        </button>
-                       <a href="dashbord.php" class="navbar-brand"><span class="glyphicon glyphicon-cutlery"></span>  Small Bite</a>
+                       <a href="dashbord.php" class="navbar-brand"><span class="glyphicon glyphicon-cutlery"></span>  Chef's Place</a>
 
                    </div>
                    
